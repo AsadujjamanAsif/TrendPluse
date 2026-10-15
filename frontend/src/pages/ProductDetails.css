@@ -1,0 +1,67 @@
+.product-details-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.back-btn:hover {
+  color: #f39c12;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.details-info h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.details-price {
+  font-size: 28px;
+  color: #f39c12;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.details-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.stock-status {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.add-cart-btn-large:hover {
+  background-color: #f39c12 !important;
+  color: #1a1a1a !important;
+}
+
+/* মোবাইল রেসপন্সিভ */
+@media (max-width: 768px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
