@@ -53,3 +53,13 @@
     gap: 15px; /* মেনুর মাঝের ফাঁকা জায়গা কমে যাবে */
   }
 }
+
+.cart-badge {
+  background-color: #f39c12;
+  color: #1a1a1a;
+  padding: 2px 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}

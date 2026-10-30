@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react'; // useContext যোগ করা হলো
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
+import { CartContext } from '../context/CartContext'; // নতুন যুক্ত করা হলো
 import './ProductDetails.css';
 
 const ProductDetails = () => {
@@ -26,6 +27,7 @@ const ProductDetails = () => {
   if (loading) {
     return <h2 style={{ textAlign: 'center', marginTop: '100px' }}>Loading Data...</h2>;
   }
+  const { addToCart } = useContext(CartContext);
 
   return (
     <div className="product-details-container">
@@ -46,10 +48,16 @@ const ProductDetails = () => {
           </div>
 
           {product.countInStock > 0 && (
-            <button className="add-cart-btn-large" style={{ marginTop: '20px', padding: '15px 30px', background: '#1a1a1a', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
-              Add to Cart
-            </button>
-          )}
+              <button 
+                onClick={() => {
+                  addToCart(product, 1);
+                  alert('Product added to cart!'); // বোঝার সুবিধার জন্য একটি এলার্ট
+               }} 
+                className="add-cart-btn-large" 
+                style={{ marginTop: '20px', padding: '15px 30px', background: '#1a1a1a', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+                Add to Cart
+                </button>
+              )}
         </div>
       </div>
     </div>

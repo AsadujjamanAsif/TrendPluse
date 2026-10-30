@@ -1,0 +1,60 @@
+.shipping-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+}
+
+.shipping-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+.shipping-form .form-group {
+  margin-bottom: 20px;
+}
+
+.shipping-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.shipping-form input, 
+.shipping-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.shipping-form input:focus, 
+.shipping-form select:focus {
+  outline: none;
+  border-color: #f39c12;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 15px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.continue-btn:hover {
+  background: #f39c12;
+  color: #1a1a1a;
+}
